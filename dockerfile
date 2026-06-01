@@ -8,6 +8,6 @@ RUN flutter pub get
 
 RUN flutter doctor
 
-RUN flutter build apk --release
+RUN flutter build web --release
 
 CMD ["bash"]

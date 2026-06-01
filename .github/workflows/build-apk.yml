@@ -31,11 +31,11 @@ jobs:
       - name: Get Dependencies
         run: flutter pub get
 
-      - name: Build APK
-        run: flutter build apk --release
+      - name: Build web
+        run: flutter build web --release
 
-      - name: Upload APK
+      - name: Upload Build Files
         uses: actions/upload-artifact@v4
         with:
-          name: flutter-apk
-          path: build/app/outputs/flutter-apk/app-release.apk
+          name: flutter-web-build
+          path: build/web
